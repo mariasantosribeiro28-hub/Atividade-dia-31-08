@@ -1,0 +1,77 @@
+/* Reseta margens e define caixa de tamanho padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página com cores vibrantes em gradiente linear */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Estilo do Cartão - Efeito Vidro Fosco */
+.profile-card {
+  width: 320px;
+  padding: 40px 24px;
+  text-align: center;
+  border-radius: 16px;
+  
+  /* Uso do RGBA no background: altera apenas a opacidade do fundo do cartão,
+     mantendo o texto e a imagem com 100% de opacidade */
+  background-color: rgba(255, 255, 255, 0.15);
+  
+  /* Efeito de vidro fosco (Glassmorphism) e borda fina */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem de Perfil */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
+}
+
+/* Tipografia e Contraste */
+.profile-name {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.profile-role {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+/* Botão com Gradiente Ciano / Turquesa Tech (Harmoniza com o Roxo) */
+.btn-portfolio {
+  display: inline-block;
+  padding: 12px 28px;
+  color: #0d1b2a; /* Texto escuro para garantir alto contraste sobre o ciano */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.4);
+  transition: opacity 0.3s ease;
+}
+
+/* Efeito Hover utilizando a propriedade opacity */
+.btn-portfolio:hover {
+  opacity: 0.8;
+}
